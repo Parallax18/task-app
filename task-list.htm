@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="./css/all.min.css" /> -->
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="./task-list-style.css" />
+    <title>Task list</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="main-head">
+        <h1 class="header">Task List</h1>
+        <h2 class="header-two">Let's help you oraganize...</h2>
+      </div> -->
+      <!-- add task -->
+      <div class="task-area">
+        <p class="alert"></p>
+        <form class="task-form">
+          <input type="text" class="task-input" placeholder="Add a task" />
+          <button class="add-btn" type="submit"> <i class="fa fa-plus"></i> </button>
+        </form>
+        
+        <!-- filter task -->
+        <div class="tool-tip"><p class="tip">Looks like you have a lot of tasks. Use this to filter through</p></div>
+        <form class="task-form filter-form">
+            <input type="text" class="task-input filter-input" placeholder="find a task" />
+            <div class="add-task"><input type="submit" value="Add task" class="fa fa-filter" /></div>
+        </form>
+
+        <!-- task list -->
+        <div class="task-group">
+            <ul class="task-list">
+                
+            </ul>
+        </div>
+       
+    
+        <!-- clear entire list -->
+        <div class="clear-tip">
+          <p class="tip">Are you sure you want to delete all your tasks</p>
+          <div class="options clear-options">
+            <div class="remove-task edit-task keep-all-tasks">
+              <input type="button" value="Add task" class="btn fa fa-thumbs-down"/>
+            </div>
+            <div class="remove-task clear-all-tasks">
+              <input type="button" value="Add task" class="btn fa fa-thumbs-up"/>
+            </div>
+          </div>
+        </div>
+        <div class="clear-task add-task">
+          <input type="button" value="Add task" class="btn fa fa-trash clear-btn" />
+        </div>
+      </div>
+    </div>
+    <!-- features to add: the filter should not show until you have up to five tasks, -->
+    <!-- add a tool tip feature for everything -->
+    <!-- make alerts for deleting show up like tool tips -->
+    <!-- user should be able to persist the task -->
+    <!-- the user can choose to mark task as done and keep them or decide to clear them. a done task task must not necessarily dissapear -->
+    <!-- user should be able to categorize the tasks based on criteria like; importance,type,time etc. colors could be used-->
+    <!-- there should be a time function -->
+    <!-- in the time function the user should be able to state when a certain task should be done and set a reminder that will prompt an alert when the task is of high priority and time is nigh -->
+    <!-- allow user login -->
+    <!-- make a complete task manager app -->
+    <script src="./task-list-app.js"></script>
+    <!-- font awesome -->
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>
