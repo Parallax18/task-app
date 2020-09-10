@@ -76,7 +76,7 @@ function addItem(e) {
 
 
         // Show filter input when the tasks get to five
-        if(taskList.children.length >= 5){
+        if(taskList.children.length == 5){
             filterForm.style.display = 'flex'
             displayTip()
         };
@@ -151,7 +151,7 @@ function setBackToDefault(){
     taskInput.value = "";
     editFlag = false;
     editId = "";
-    addBtn.innerHTML = '<i class="fa fa-pen"></i>'
+    addBtn.innerHTML = '<i class="fa fa-plus"></i>'
 }
 
 
@@ -173,6 +173,6 @@ function displayTip() {
 
     setTimeout(() => {
         tip.classList.remove('active')
-    }, 7000)
+    }, 3000)
 }
 
